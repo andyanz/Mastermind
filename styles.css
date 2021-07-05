@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.title {
+    font-family: 'roboto'; 
+    padding-left: 30px;
+}
+
+.personal-best {
+    font-family: 'Signika';
+    font-weight: 500;
+    font-size: 30px;
+    padding-right: 50px;
+}
+body {
+    background-color:rgb(248, 237, 213);
+}
+.blur {
+    filter: blur(15px);
+}
+.board {
+    width: 350px;
+    margin: 0 auto;
+    background-color: rgb(248, 237, 213);
+}
+#top {
+    height: 50px;
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: black;
+}
+.guess {
+    height: 50px;
+    background-color: black;
+}
+.color1, .color2, .color3, .color4 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 43px;
+    background-color: grey;
+    border: 1px solid white;
+}
+#bottom {
+    height: 50px;
+    border: 1px solid black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: black;
+}
+.redTag {
+    margin-left: -27px;
+    position: absolute; 
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    font-size: 21px;
+    border: 1px solid red;
+    font-family: 'roboto';
+}
+.whiteTag {
+    margin-left: 350px;
+    position: absolute;  
+    background-color:white;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid black;
+    font-family: 'roboto';
+}
+.colorSelection {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.selectionColor  {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 17px;
+}
+.pink {
+    background-color: rgb(245, 63, 102);
+}
+.pink:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.red {
+    background-color: rgb(214, 6, 6);
+}
+.red:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.orange {
+    background-color: rgb(255, 123, 0);
+}
+.orange:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.yellow {
+    background-color: rgb(255, 238, 0);
+}
+.yellow:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.green {
+    background-color: rgb(102, 255, 0); 
+}
+.green:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.blue {
+    background-color: rgb(0, 195, 255); 
+}
+.blue:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.white {
+    background-color: white; 
+}
+.white:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.silver {
+    background-color: rgb(172, 172, 172); 
+}
+.silver:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.check {
+    margin-left: 400px;
+    position: absolute;  
+    background-color:white;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey;
+    font-family: 'Signika';
+    padding: 3px;
+    color: grey;
+    display: none;
+}
+.check:hover {
+    background-color: grey;
+    color: white;
+    border: 1px solid grey;
+}
+.message {
+    z-index: 1;
+    border: 1px solid black;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    padding: 70px;
+    border-radius: 9px;
+    max-width: 200px;
+    font-family: 'Signika';
+    border: 1px solid white;
+    box-shadow: 0 0 15px 1px rgb(167, 167, 167);
+    display: none;
+}
+.text {
+    font-size: 20px;
+}
+.replay {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(250, 247, 98);
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 22px;
+    box-shadow: 0 0 6px 1px blue;
+}
+.replay-mess {
+    box-shadow: 0 0 6px 1px rgb(198, 255, 9);
+}
+.replay-mess:hover {
+    box-shadow: 0 0 10px 1px rgb(198, 255, 9);
+}
+.restart {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+}
+.restart:hover {
+    transition-duration: 100ms;
+    box-shadow: 0 0 10px 1px blue;
+}
+.close {
+    border: none;
+    background-color: transparent;
+    color: white;
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    font-size: 25px;
+}
+.close:hover {
+    transform: rotate(90deg);
+    transition-duration: 900ms;
+}
